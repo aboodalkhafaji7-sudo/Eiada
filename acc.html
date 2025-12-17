@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eiada - إنشاء حساب</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f4f6f8;
+}
+.box{
+  background:#fff;
+  width:90%;
+  max-width:380px;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+h2{text-align:center;color:#1e88e5;margin-bottom:20px}
+input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+button{
+  width:100%;
+  padding:12px;
+  background:#1e88e5;
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+    <div class="logo-box">
+      <center>
+    <img src="images/logo2.png" alt="Logo" width="120" height="120" >
+    </center>
+  </div>
+  <h2>إنشاء حساب جديد</h2>
+
+  <input placeholder="الاسم الكامل">
+  <input type="email" placeholder="البريد الإلكتروني">
+  <input type="password" placeholder="كلمة المرور">
+
+
+
+  <button onclick="location.href='login.html'">تسجيل</button> 
+</div>
+</body>
+</html>

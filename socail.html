@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eiada - Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{margin:0;background:#f4f6f8}
+
+.pageTop{
+  background:#1e88e5;
+  color:#fff;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.iconbtn{
+  background:none;border:none;color:#fff;
+  font-size:20px;cursor:pointer;
+}
+
+.content{padding:20px}
+
+.sectionCard{
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+  margin-bottom:25px;
+}
+
+.sectionCard h2{
+  color:#1e88e5;
+  margin-bottom:10px;
+}
+
+/* ===== Instagram Circles ===== */
+
+.instaWrap{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.instaCircle ,.xcircle{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  color:#fff;
+  cursor:pointer;
+  transition:.4s;
+  box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+.xcircle{ background:linear-gradient(135deg,#d0cbc7,#120b0e,#a49aa9);}
+.instaCircle:hover{
+  transform:scale(1.15) rotate(3deg);
+}
+
+.instaCircle span,
+.xcircle span{
+  font-weight:700;
+  text-align:center;
+  z-index:2;
+}
+
+.xcircle:hover{
+  transform:scale(1.15) rotate(-3deg);
+}
+
+
+/* Instagram icon on side */
+.instaIcon{
+  position:absolute;
+  right:-10px;
+  bottom:15px;
+  background:#fff;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.instaIcon img{
+  width:22px;
+}
+
+.bottomNav{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  display:flex;
+  background:#fff;
+  box-shadow:0 -3px 8px rgba(0,0,0,.1);
+}
+
+.navItem{
+  flex:1;
+  padding:10px 0;
+  text-align:center;
+  border:none;
+  background:none;
+  color:#777;
+  cursor:pointer;
+}
+
+.navItem.isActive{
+  color:#1e88e5;
+  font-weight:700;
+}
+</style>
+</head>
+
+<body>
+
+<header class="pageTop">
+  <button class="iconbtn" onclick="go('index.html')">←</button>
+  <h3>الدعم والخدمات</h3>
+  <span></span>
+</header>
+
+<main class="content">
+
+  <section class="sectionCard">
+    <h2>الدعم الطبي</h2>
+    <p>
+      نوفر دعم طبي سريع، استشارات، متابعة حالات، 
+      وتواصل مباشر عبر حساباتنا الرسمية.
+    </p>
+  </section>
+
+  <section class="sectionCard">
+    <h2>تابعنا  </h2>
+
+    <div class="instaWrap">
+
+      <div class="instaCircle" onclick="openInsta('https:')">
+        <span>abdulrahman</span>
+        <div class="instaIcon">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+        </div>
+      </div>
+
+     <div class="xcircle" onclick="openInsta('https://x.com/715__n__')">
+  <span>X</span>
+  <div class="instaIcon">
+    <img src="twitter-alt.png" width="22">
+  </div>
+</div>
+
+
+      <div class="instaCircle" onclick="openInsta('https://instagram.com/eiada3')">
+        <span>@eiada3</span>
+        <div class="instaIcon">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<script>
+function go(p){location.href=p;}
+function openInsta(url){window.open(url,'_blank');}
+</script>
+
+</body>
+</html>

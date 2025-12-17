@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eiada Web - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="app">
+  <header class="topbar">
+    <button class="iconbtn" id="notifBtn" aria-label="Notifications">
+  <span class="badge" id="notifCount">3</span>
+  <svg viewBox="0 0 24 24" class="ico">
+    <path d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2Zm6-6V11a6 6 0 1 0-12 0v5L4 18v1h16v-1l-2-2Z"/>
+  </svg>
+</button>
+  </header>
+  <div class="notifPanel" id="notifPanel" hidden>
+  <div class="notifHeader">التنبيهات</div>
+
+  <div class="notifItem">
+    <span class="dot"></span>
+    <div>
+      <b>تذكير صحي</b>
+      <p>لا تنسى شرب المي اليوم 💧</p>
+    </div>
+  </div>
+
+  <div class="notifItem">
+    <span class="dot"></span>
+    <div>
+      <b>عرض جديد</b>
+      <p>خصم على استشارة أونلاين</p>
+    </div>
+  </div>
+
+  <div class="notifItem isRead">
+    <div>
+      <b>مرحبا 👋</b>
+      <p>أهلاً بك في Eiada Web</p>
+    </div>
+  </div>
+
+  <button class="notifClear">مسح الكل</button>
+</div>
+
+  <main class="content">
+    <!-- Doctors slider -->
+<section class="chips doctorsWrap">
+ <button class="docArrow left" id="docLeft" type="button" aria-label="Previous">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M14 6 L8 12 L14 18" stroke="#1f4f85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+  <div class="chips__track" id="docTrack">
+        <!-- كرر الدكاترة -->
+        <article class="docchip">
+          <img class="docchip__img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop" alt="Doctor" />
+          <div class="docchip__name">Dr. marry</div>
+        </article>
+        <article class="docchip">
+          <img class="docchip__img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop" alt="Doctor" />
+          <div class="docchip__name">Dr. Hassan Ali</div>
+        </article>
+        <article class="docchip">
+          <img class="docchip__img" src="images/Ashraf.jpg" alt="Doctor" />
+          <div class="docchip__name">Dr. Ashraf Shakir</div>
+        </article>
+        <article class="docchip">
+          <img class="docchip__img" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&h=200&fit=crop" alt="Doctor" />
+          <div class="docchip__name">Dr. lily kramer</div>
+        </article>
+        <article class="docchip">
+          <img class="docchip__img" src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop" alt="Doctor" />
+          <div class="docchip__name">Dr. Yousif</div>
+        </article>
+        <article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop" alt="Dr John Smith" />
+  <div class="docchip__name">Dr. Emily Carter</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop" alt="Dr Emily Carter" />
+  <div class="docchip__name">Dr. John Smith</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop" alt="Dr Michael Brown" />
+  <div class="docchip__name">Dr. Michael Brown</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&h=200&fit=crop" alt="Dr Sarah Wilson" />
+  <div class="docchip__name">Dr. Sarah Wilson</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop" alt="Dr David Anderson" />
+  <div class="docchip__name">Dr. David Anderson</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop" alt="Dr Olivia Martinez" />
+  <div class="docchip__name">Dr. Olivia Martinez</div>
+</article>
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=200&h=200&fit=crop" alt="Dr James Miller" />
+  <div class="docchip__name">Dr. James Miller</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop" alt="Dr Daniel Thompson" />
+  <div class="docchip__name">Dr. Laura White</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1618498082410-b4aa22193b38?w=200&h=200&fit=crop" alt="Dr Laura White" />
+  <div class="docchip__name">Dr. Daniel Thompson</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=200&h=200&fit=crop" alt="Dr Robert Harris" />
+  <div class="docchip__name">Dr. Robert Harris</div>
+</article>
+
+<article class="docchip">
+  <img class="docchip__img" src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=200&h=200&fit=crop" alt="Dr Emma Johnson" />
+  <div class="docchip__name">Dr. Emma Johnson</div>
+</article>
+ </div>
+ <button class="docArrow right" id="docRight" type="button" aria-label="Next" hidden>
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M10 6 L16 12 L10 18" stroke="#1f4f85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+</section>
+
+    <!-- Greeting card -->
+    <section class="heroCard">
+      <div class="heroCard__bubble">
+        <p class="heroCard__text">
+          مرحباً، أنا <b>Eiada</b>.<br />
+          يمكنني مساعدتك في معرفة المزيد عن صحتك.
+        </p>
+      </div>
+<div class="heroCard__logo" aria-label="Logo">
+  <img src="images/logo.png" alt="Eiada Logo" class="heroLogo">
+</div>
+
+    </section>
+
+    <!-- Big CTA -->
+    <section class="ctaWrap">
+      <button class="cta" id="startBtn">
+        <span>بدء تقييم الأعراض</span>
+        <span class="cta__spark" aria-hidden="true">✦</span>
+      </button>
+    </section>
+
+    <!-- Offers -->
+<section class="sectionTitle">عروض خاصة</section>
+
+<section class="offersWrap">
+  <button class="docArrow left" id="offLeft" type="button" aria-label="Previous">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M14 6 L8 12 L14 18" stroke="#1f4f85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <div class="offersSlider" id="offersSlider">
+    <div class="offersTrack">
+    <!-- الصف الأول -->
+
+    <div class="offerRow">
+<div class="offerItem" data-name="Vitamin C" data-price="12" data-img="images/p1.jpg" onclick="openProduct(this)">
+  <img src="images/p1.jpg" alt="Vitamin C" />
+  <span>Vitamin C</span>
+</div>
+
+<div class="offerItem" data-name="Face Cleanser" data-price="9" data-img="images/p2.jpg" onclick="openProduct(this)">
+  <img src="images/p2.jpg" alt="Face Cleanser" />
+  <span>Face Cleanser</span>
+</div>
+
+<div class="offerItem" data-name="Pain Relief" data-price="7" data-img="images/p3.jpg" onclick="openProduct(this)">
+  <img src="images/p3.jpg" alt="Pain Relief" />
+  <span>Pain Relief</span>
+</div>
+
+<div class="offerItem" data-name="Skin Care" data-price="15" data-img="images/p4.jpg" onclick="openProduct(this)">
+  <img src="images/p4.jpg" alt="Skin Care" />
+  <span>Skin Care</span>
+</div>
+
+<div class="offerItem" data-name="Medical Mask" data-price="5" data-img="images/p5.jpg" onclick="openProduct(this)">
+  <img src="images/p5.jpg" alt="Medical Mask" />
+  <span>Medical Mask</span>
+</div>
+
+<div class="offerItem" data-name="Hand Sanitizer" data-price="6" data-img="images/p6.jpg" onclick="openProduct(this)">
+  <img src="images/p6.jpg" alt="Hand Sanitizer" />
+  <span>Hand Sanitizer</span>
+</div>
+
+<div class="offerItem" data-name="Thermometer" data-price="18" data-img="images/p7.jpg" onclick="openProduct(this)">
+  <img src="images/p7.jpg" alt="Thermometer" />
+  <span>Thermometer</span>
+</div>
+
+<div class="offerItem" data-name="Blood Pressure Monitor" data-price="45" data-img="images/p8.jpg" onclick="openProduct(this)">
+  <img src="images/p8.jpg" alt="Blood Pressure Monitor" />
+  <span>Blood Pressure</span>
+</div>
+
+<div class="offerItem" data-name="Dental Care" data-price="8" data-img="images/p9.jpg" onclick="openProduct(this)">
+  <img src="images/p9.jpg" alt="Dental Care" />
+  <span>Dental Care</span>
+</div>
+
+<div class="offerItem" data-name="Eye Drops" data-price="4" data-img="images/p10.jpg" onclick="openProduct(this)">
+  <img src="images/p10.jpg" alt="Eye Drops" />
+  <span>Eye Drops</span>
+</div>
+    </div>
+    <!-- الصف الثاني -->
+    <div class="offerRow">
+<div class="offerItem" data-name="Protein Shake" data-price="22" data-img="images/p11.jpg" onclick="openProduct(this)">
+  <img src="images/p11.jpg" alt="Protein Shake" />
+  <span>Protein Shake</span>
+</div>
+
+<div class="offerItem" data-name="Vitamin D" data-price="10" data-img="images/p12.jpg" onclick="openProduct(this)">
+  <img src="images/p12.jpg" alt="Vitamin D" />
+  <span>Vitamin D</span>
+</div>
+
+<div class="offerItem" data-name="Hair Care" data-price="14" data-img="images/p13.jpg" onclick="openProduct(this)">
+  <img src="images/p13.jpg" alt="Hair Care" />
+  <span>Hair Care</span>
+</div>
+
+<div class="offerItem" data-name="Medical Gloves" data-price="6" data-img="images/p14.jpg" onclick="openProduct(this)">
+  <img src="images/p14.jpg" alt="Medical Gloves" />
+  <span>Medical Gloves</span>
+</div>
+
+<div class="offerItem" data-name="First Aid Kit" data-price="25" data-img="images/p15.jpg" onclick="openProduct(this)">
+  <img src="images/p15.jpg" alt="First Aid Kit" />
+  <span>First Aid Kit</span>
+</div>
+
+<div class="offerItem" data-name="Pain Gel" data-price="11" data-img="images/p16.jpg" onclick="openProduct(this)">
+  <img src="images/p16.jpg" alt="Pain Gel" />
+  <span>Pain Gel</span>
+</div>
+
+<div class="offerItem" data-name="Skin Lotion" data-price="13" data-img="images/p17.jpg" onclick="openProduct(this)">
+  <img src="images/p17.jpg" alt="Skin Lotion" />
+  <span>Skin Lotion</span>
+</div>
+
+<div class="offerItem" data-name="Digital Scale" data-price="30" data-img="images/p18.jpg" onclick="openProduct(this)">
+  <img src="images/p18.jpg" alt="Digital Scale" />
+  <span>Digital Scale</span>
+</div>
+
+<div class="offerItem" data-name="Cold Relief" data-price="9" data-img="images/p19.jpg" onclick="openProduct(this)">
+  <img src="images/p19.jpg" alt="Cold Relief" />
+  <span>Cold Relief</span>
+</div>
+
+<div class="offerItem" data-name="Energy Booster" data-price="16" data-img="images/p20.jpg" onclick="openProduct(this)">
+  <img src="images/p20.jpg" alt="Energy Booster" />
+  <span>Energy Booster</span>
+</div>
+    </div>
+    </div>
+  <button class="docArrow right" id="offRight" type="button" aria-label="Next" hidden>
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M10 6 L16 12 L10 18" stroke="#1f4f85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</section>
+
+    <!-- Featured -->
+    <section class="sectionTitle">مميز</section>
+    <section class="featured">
+      <div class="featuredCard">
+        <div class="featuredCard__img">
+          <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=900&h=650&fit=crop" alt="Featured" />
+        </div>
+        <div class="featuredCard__body">
+          <h3>استشارة سريعة</h3>
+          <p>جاوب على كم سؤال بسيط ونطيك تقييم أولي.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal (simple) -->
+    <div class="modal" id="modal" hidden>
+      <div class="modal__sheet">
+        <div class="modal__head">
+          <div class="modal__title">تقييم الأعراض</div>
+          <button class="iconbtn" aria-label="Close" onclick="closeModal()">✕</button>
+        </div>
+
+        <form class="form" onsubmit="event.preventDefault(); submitCheck();">
+          <label class="field">
+            <span>شنو أكثر عرض مزعجك؟</span>
+            <input id="symptom" type="text" placeholder="مثلاً: كحة، صداع، حرارة..." required />
+          </label>
+
+          <label class="field">
+            <span>من متى موجود؟</span>
+            <select id="duration">
+              <option>اليوم</option>
+              <option>أقل من 3 أيام</option>
+              <option>أسبوع</option>
+              <option>أكثر</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>شدة الألم/التعب (0-10)</span>
+            <input id="severity" type="range" min="0" max="10" value="5" />
+            <div class="rangeVal">القيمة: <b id="sevVal">5</b></div>
+          </label>
+
+          <button class="cta cta--small" type="submit">اعرض النتيجة</button>
+
+          <p class="hint">
+            ملاحظة: هذا تقييم أولي فقط وما يغني عن الطبيب إذا الحالة شديدة.
+          </p>
+        </form>
+      </div>
+    </div>
+    <section class="quickConsult">
+  <div class="qcCard">
+    <div class="qcText">
+      <h3>Quick Consultation</h3>
+      <p>3 خطوات سريعة ونقترح لك تقييم أولي + منتجات مناسبة.</p>
+      <button class="qcBtn" type="button" onclick="openQC()">Start Now</button>
+    </div>
+    <div class="qcRing" aria-hidden="true">
+      <div class="ring"><span id="qcPct">0%</span></div>
+      <small>Progress</small>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <nav class="bottomNav">
+    <button class="navItem isActive" onclick="go('index.html')">
+      <span class="navIco">⌂</span>
+      <span>Home</span>
+    </button>
+    <button class="navItem" onclick="go('profile.html')">
+      <span class="navIco">👤</span>
+      <span>Profile</span>
+    </button>
+    <button class="navItem" onclick="go('settings.html')">
+      <span class="navIco">⚙</span>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+  <script>
+  const modal = document.getElementById("assessmentModal");
+  const overlay = document.getElementById("overlay");
+  const closeBtn = document.getElementById("closeModal");
+
+  function closeModal(){
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape"){
+      closeModal();
+    }
+  });
+</script>
+<div class="productModal" id="productModal" hidden>
+  <div class="productBox">
+    <button class="closeBtn" onclick="closeProduct()">✕</button>
+
+    <img id="pmImg" src="" alt="Product" />
+
+    <h3 id="pmName"></h3>
+    <p class="pmPrice">$<span id="pmPrice"></span></p>
+
+    <div class="qtyBox">
+      <button onclick="changeQty(-1)">−</button>
+      <span id="pmQty">1</span>
+      <button onclick="changeQty(1)">+</button>
+    </div>
+
+    <button class="addCartBtn" onclick="addToCart()">Add to Cart</button>
+  </div>
+</div>
+<!-- Floating Cart Button -->
+<button class="cartFab" id="cartFab" onclick="openCart()" hidden>
+  <span class="cartCount" id="cartCount">0</span>
+  🛒
+</button>
+
+<!-- Cart Modal -->
+<div class="cartModal" id="cartModal" hidden onclick="closeCart()">
+  <div class="cartBox" onclick="event.stopPropagation()">
+    <div class="cartHead">
+      <h3>Cart</h3>
+      <button class="iconbtn" type="button" onclick="closeCart()">✕</button>
+    </div>
+
+    <div class="cartList" id="cartList"></div>
+
+    <div class="cartFooter">
+      <div class="cartTotal">
+        Total: $<span id="cartTotal">0</span>
+      </div>
+      <button class="checkoutBtn" type="button" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+</div>
+<div class="qcModal" id="qcModal" hidden onclick="closeQC()">
+  <div class="qcBox" onclick="event.stopPropagation()">
+    <div class="qcHead">
+      <div>
+        <b>Quick Consultation</b>
+        <div class="qcSub">3 Steps • Result + Bundle</div>
+      </div>
+      <button class="iconbtn" type="button" onclick="closeQC()">✕</button>
+    </div>
+
+    <div class="qcBody">
+      <!-- Progress Ring -->
+      <div class="qcTop">
+        <div class="qcRingBig">
+          <div class="ringBig"><span id="qcRingText">33%</span></div>
+          <small id="qcStepLabel">Step 1 of 3</small>
+        </div>
+
+        <div class="qcTips" id="qcTips">
+          اختار عرض واحد حتى نكمل.
+        </div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="qcStep" id="qcStep1">
+        <h4>شنو أكثر شي يضوجك؟</h4>
+        <div class="qcChips" id="qcChips">
+          <button type="button" class="chip" data-sym="cold">Cold / Flu</button>
+          <button type="button" class="chip" data-sym="headache">Headache</button>
+          <button type="button" class="chip" data-sym="skin">Skin Issue</button>
+          <button type="button" class="chip" data-sym="eyes">Eye Irritation</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="qcStep" id="qcStep2" hidden>
+        <h4>شكد الشدة؟</h4>
+        <input id="qcSev" type="range" min="0" max="10" value="5" />
+        <div class="qcSevVal">Severity: <b id="qcSevVal">5</b>/10</div>
+         <div id="qcQuestions"></div>
+      </div>
+
+      <!-- Step 3 (Result) -->
+      <div class="qcStep" id="qcStep3" hidden>
+        <h4>Result</h4>
+        <div class="qcResult" id="qcResult"></div>
+
+        <div class="qcBundle">
+          <b>Recommended Bundle</b>
+          <div class="bundleList" id="bundleList"></div>
+          <button class="qcAddAll" type="button" onclick="addBundleToCart()">Add bundle to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="qcFooter">
+      <button class="qcBack" type="button" onclick="qcPrev()" hidden id="qcBackBtn">Back</button>
+      <button class="qcNext" type="button" onclick="qcNext()" id="qcNextBtn">Next</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

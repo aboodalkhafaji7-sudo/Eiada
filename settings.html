@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eiada Web - Settings</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="app">
+
+<header class="pageTop">
+  <button class="iconbtn" aria-label="Back" onclick="go('index.html')">←</button>
+  <h1 class="pageTop__title">الإعدادات</h1>
+  <span class="pageTop__spacer"></span>
+</header>
+
+<main class="content">
+
+  <!-- إعدادات الحساب -->
+  <section class="settingsBlock">
+    <div class="settingsTitle">إعدادات الحساب</div>
+
+    <a class="row" href="#" onclick="openModal('privacyModal')">
+      <span>الخصوصية</span>
+      <span class="row__arrow">›</span>
+    </a>
+   <!-- Logout Button -->
+<!-- Logout -->
+<a class="row logout-row" href="#" onclick="logout()">
+  <span>تسجيل خروج</span>
+  <span class="row__arrow">›</span>
+</a>
+
+  </section>
+
+  <!-- الدعم -->
+  <section class="settingsBlock">
+    <div class="settingsTitle">الدعم</div>
+
+    <a class="row" href="https://wa.me/" target="_blank" rel="noopener">
+      <span>واتساب</span>
+      <span class="row__arrow">›</span>
+    </a>
+
+    <a class="row" href="#" onclick="openModal('aboutModal')">
+      <span>حول Eiada</span>
+      <span class="row__arrow">›</span>
+    </a>
+
+    <a class="row" href="#" onclick="openModal('ratingModal')">
+      <span>تقييم Eiada</span>
+      <span class="row__arrow">›</span>
+    </a>
+   <a class="row" href="socail.html" target="_blank" rel="noopener">
+      <span>حساباتنا على مواقع التواصل الاجتماعي </span>
+      <span class="row__arrow">›</span>
+    </a>
+    <div class="version">الإصدار 1.0.0</div>
+  </section>
+
+  <div class="toast" id="toast" hidden></div>
+ 
+</main>
+
+<!-- About Modal -->
+<div class="modal" id="aboutModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>عن تطبيق عيادة</h2>
+      <button class="close-btn" onclick="closeModal('aboutModal')">×</button>
+    </div>
+    <div class="modal-body">
+      <p>
+        <strong>Eiada هو موقع طبي يقدّم معلومات عن الأدوية، ونصائح صحية عامة، مع ترشيحات لأطباء مختصين وكفؤوين، بهدف مساعدة المستخدمين على الوصول إلى رعاية صحية أفضل. المحتوى المقدم لا يغني عن استشارة الطبيب المختص.</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Rating Modal -->
+<div class="modal" id="ratingModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>تقييم التطبيق</h2>
+      <button class="close-btn" onclick="closeModal('ratingModal')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="stars-container">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+      <div class="rating-text" id="ratingText">اضغط على النجوم للتقييم</div>
+      <textarea id="ratingComment" class="comment-box" placeholder="اكتب تعليقك (اختياري)"></textarea>
+      <button class="btn submit-btn" id="submitRatingBtn" disabled>إرسال</button>
+    </div>
+  </div>
+</div>
+
+<!-- Privacy Modal -->
+<div class="modal" id="privacyModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>إعدادات الخصوصية</h2>
+      <button class="close-btn" onclick="closeModal('privacyModal')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="privacy-option">
+        <span>السماح بالإشعارات</span>
+        <label class="switch">
+          <input type="checkbox" id="allowNotifications">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="privacy-option">
+        <span>مشاركة البيانات مع شركاء</span>
+        <label class="switch">
+          <input type="checkbox" id="shareData">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="privacy-option">
+        <span>إخفاء النشاط عن الآخرين</span>
+        <label class="switch">
+          <input type="checkbox" id="hideActivity">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <button class="btn submit-btn" id="savePrivacyBtn">حفظ</button>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom Navigation -->
+<nav class="bottomNav">
+  <button class="navItem" onclick="go('index.html')">⌂ Home</button>
+  <button class="navItem" onclick="go('profile.html')">👤 Profile</button>
+  <button class="navItem isActive" onclick="go('settings.html')">⚙ Settings</button>
+</nav>
+<script src="script.js"></script>
+<script src="settings-script.js"></script>
+</body>
+</html>
+
+
+
+

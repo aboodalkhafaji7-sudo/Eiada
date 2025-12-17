@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eiada Web - Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="app">
+ <header class="pageTop">
+  <button class="iconbtn" aria-label="Back" onclick="go('index.html')">←</button>
+  <h1 class="pageTop__title">الملف الشخصي</h1>
+  <span class="pageTop__spacer"></span>
+</header>
+
+
+  <main class="content">
+
+  <section class="profileCard">
+    <div class="avatar editable">A</div>
+    <div>
+      <div class="pName editable">Abdullah</div>
+      <div class="pSub editable">Student • Baghdad</div>
+    </div>
+
+    <button class="editBtn" onclick="toggleEdit()">✏️ تعديل</button>
+  </section>
+
+  <!-- باقي الأقسام -->
+
+
+
+
+    <!-- معلومات أساسية -->
+    <section class="infoBlock">
+  <div class="settingsTitle">المعلومات الأساسية</div>
+
+  <div class="infoRow">
+    <strong>الاسم:</strong>
+    <span class="editable">Abdullah</span>
+  </div>
+
+  <div class="infoRow">
+    <strong>تاريخ الميلاد:</strong>
+    <span class="editable">01/01/2000</span>
+  </div>
+
+  <div class="infoRow">
+    <strong>الجنس:</strong>
+    <span class="editable">ذكر</span>
+  </div>
+
+  <div class="infoRow">
+    <strong>الهاتف:</strong>
+    <span class="editable">0770XXXXXXX</span>
+  </div>
+
+  <div class="infoRow">
+    <strong>البريد الإلكتروني:</strong>
+    <span class="editable">abdullah@example.com</span>
+  </div>
+</section>
+
+
+    <!-- معلومات طبية -->
+    <section class="infoBlock">
+  <div class="settingsTitle">المعلومات الطبية</div>
+
+  <div class="infoRow"><strong>الوزن:</strong> <span class="editable">70 كغ</span></div>
+  <div class="infoRow"><strong>الطول:</strong> <span class="editable">175 سم</span></div>
+  <div class="infoRow"><strong>فصيلة الدم:</strong> <span class="editable">O+</span></div>
+  <div class="infoRow"><strong>أمراض مزمنة:</strong> <span class="editable">لا يوجد</span></div>
+  <div class="infoRow"><strong>الأدوية المنتظمة:</strong> <span class="editable">لا يوجد</span></div>
+  <div class="infoRow"><strong>حساسية دوائية:</strong> <span class="editable">لا يوجد</span></div>
+</section>
+
+
+    <!-- سجل الزيارات والفحوصات -->
+    <section class="infoBlock">
+      <div class="settingsTitle">سجل الزيارات</div>
+      <div class="infoRow">12/12/2025 - استشارة عامة</div>
+      <div class="infoRow">10/11/2025 - تحليل دم</div>
+      <div class="infoRow">05/10/2025 - فحص ضغط الدم</div>
+    </section>
+
+    <!-- المواعيد القادمة -->
+    <section class="infoBlock">
+      <div class="settingsTitle">المواعيد القادمة</div>
+      <div class="infoRow">20/12/2025 - طبيب أسنان</div>
+      <div class="infoRow">25/12/2025 - طبيب قلب</div>
+    </section>
+
+    <!-- اختصارات -->
+    <section class="settingsBlock">
+      <div class="settingsTitle">اختصارات</div>
+      <a class="row" href="index.html">
+        <span>بدء تقييم الأعراض</span>
+        <span class="row__arrow">›</span>
+      </a>
+      <a class="row" href="settings.html">
+        <span>الإعدادات</span>
+        <span class="row__arrow">›</span>
+      </a>
+    </section>
+
+    <div class="toast" id="toast" hidden></div>
+  </main>
+
+  <nav class="bottomNav">
+    <button class="navItem" onclick="go('index.html')">
+      <span class="navIco">⌂</span>
+      <span>Home</span>
+    </button>
+    <button class="navItem isActive" onclick="go('profile.html')">
+      <span class="navIco">👤</span>
+      <span>Profile</span>
+    </button>
+    <button class="navItem" onclick="go('settings.html')">
+      <span class="navIco">⚙️</span>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
